@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Date" content="2025-02-19T10:45:30+09:00">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Subject" content="디저트, 커피">
+  <!-- <meta http-equiv="Title" content="쑤니 디저트카페"> -->
+  <!-- <meta http-equiv="Other Agent" content="관리자 : 김이성"> -->
+  <!-- <meta http-equiv="Distribution" content="홍길동"> -->
+  <!-- <meta http-equiv="Copyright" content="copyright@dothome"> -->
+  <!-- <meta http-equiv="Build" content="2025-02-19"> -->
+  <!-- <meta http-equiv="Last-Modified" content="Mon,20 Jul 2025 19:30:30">  -->
+  <!-- <meta http-equiv="Refresh" content="60"> -->
+  <meta http-equiv="Page-Enter" content="revealtrans(Duration=1,Transition=12)">
+  <meta name="author" content="쑤니 컴퍼니">
+  <meta name="description" content="쑤니 디저트카페 - 신선한 케이크, 빵, 커피 전문점">
+  <meta name="keywords" content="디저트카페, 케이크, 커피, 베이커리, 쑤니카페">
+  <meta name="robots" content="index, follow">
+
+  <title>반응형웹-게스</title>
+  <!-- reset.css -->
+  <link rel="stylesheet" href="./css/reset.css" type="text/css">
+
+  <!-- 공통서식  pc기준 common.css -->
+  <link rel="stylesheet" href="./css/common.css" type="text/css">
+
+  <!-- main.css -->
+  <link rel="stylesheet" href="./css/main.css" type="text/css">
+
+  <!-- tablet버전 서식 -->
+  <link rel="stylesheet" href="./css/tablet.css" type="text/css">
+  <!-- mobile버전 서식 -->
+  <link rel="stylesheet" href="./css/mobile.css" type="text/css">
+
+  <!-- 구글폰트 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+  <!-- 폰트어썸 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" type="text/css">
+
+  <!-- 파비콘 -->
+  <link rel="shortcut icon" href="./images/favi.ico" type="image/x-icon">
+
+<!-- --------------------main slide------------------------------ -->
+
+  <!-- flexslider 서식 -->
+  <link rel="stylesheet" href="./css/flexslider.css" type="text/css">
+  
+  <!-- jQuery 라이브러리 -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+
+  <!-- flexslider script -->
+  <script src="./script/jquery.flexslider.js"></script>
+
+</head>
+<body>
+  <input type="checkbox" id="toggle">
+  <!-- 헤더영역 시작 -->
+  <header>
+    <div class="header_inner">
+      <h1>
+        <a href="index.html" title="메인페이지로바로가기">
+          <img src="./images/logo.png" alt="쑤니디저트카페로고">
+        </a>
+      </h1>
+      <!-- 오른쪽 상단 내비게이션 Local Navigation Bar-->
+      <nav class="lnb">
+        <ul>
+          <li><a href="index.html" title="여성">여성</a></li>
+          <li><a href="franchise.html" title="남성">남성</a></li>
+          <li><a href="event.html" title="컬렉션">컬렉션</a></li>
+          <li><a href="join.html" title="데님">데님</a></li>
+          <li><a href="login.html" title="가방">가방</a></li>
+          <li><a href="admin.html" title="베스트">베스트</a></li>
+          <li>
+            <input type="search" id="sh" placeholder="검색어 입력">
+            <label for="sh"><i class="fas fa-search"></i></label>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- 모바일, 태블릿에서 보여주기 위한 메뉴, 버튼 -->
+      <label for="toggle" id="t_btn"><i class="fas fa-bars"></i></label>
+      <i class="fas fa-search m_search"></i>
+    </div>
+
+    <!-- 메인메뉴 2단 내비게이션 -->
+    <nav class="gnb">
+      <label for="toggle"><i class="fas fa-times"></i></label>
+      <ul>
+        <li><a href="brand.html" title="여성">여성<i class="fas fa-angle-down"></i></a>
+          <ul class="sub">
+            <li><a href="brand.html" title="아우터">아우터</a></li>
+            <li><a href="brand2.html" title="티셔츠">티셔츠</a></li>
+            <li><a href="brand2.html" title="셔츠">셔츠</a></li>
+            <li><a href="brand2.html" title="스웨터">스웨터</a></li>
+            <li><a href="brand2.html" title="팬츠">팬츠</a></li>
+          </ul>
+        </li>
+
+        <li><a href="menu.html" title="남성">남성<i class="fas fa-angle-down"></i></a>
+        <ul class="sub">
+          <li><a href="menu.html" title="아우터">아우터</a></li>
+          <li><a href="menu2.html" title="티셔츠">티셔츠</a></li>
+          <li><a href="menu3.html" title="셔츠">셔츠</a></li>
+          <li><a href="menu4.html" title="스웨터">스웨터</a></li>
+          <li><a href="menu5.html" title="팬츠">팬츠</a></li>
+        </ul>
+        </li>
+
+        <li><a href="store.html" title="컬렉션">컬렉션<i class="fas fa-angle-down"></i></a>
+        <ul class="sub">
+          <li><a href="store.html" title="24FW 수지">24FW 수지</a></li>
+          <li><a href="store.html" title="게스 오리지널스">게스 오리지널스</a></li>
+          <li><a href="store.html" title="게스 마르시아노">게스 마르시아노</a></li>
+          <li><a href="store.html" title="게스 글로벌">게스 글로벌</a></li>
+        </ul>
+        </li>
+
+        <li><a href="community.hmtl" title="데님">데님<i class="fas fa-angle-down"></i></a>
+        <ul class="sub">
+          <li><a href="community.hmtl" title="여성">여성</a></li>
+          <li><a href="community2.hmtl" title="남성">남성</a></li>
+        </ul>
+        </li>
+
+        <li><a href="fran.html" title="가방">가방<i class="fas fa-angle-down"></i></a>
+        <ul class="sub">
+          <li><a href="fran.html" title="핸드백">핸드백</a></li>
+          <li><a href="fran2.html" title="숄더백">숄더백</a></li>
+          <li><a href="fran2.html" title="크로스바디">크로스바디</a></li>
+          <li><a href="fran2.html" title="미니백">미니백</a></li>
+          <li><a href="fran2.html" title="백팩">백팩</a></li>
+          <li><a href="fran2.html" title="월렛">월렛</a></li>
+        </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- 메인영역 시작 -->
+  <main>
+  <article class="slide">
+    <h2>메인슬라이드</h2>
+    <!-- 반응형 슬라이드 -->
+    <div class="flexslider">
+      <ul class="slides">
+        <li>
+          <img src="./images/main1.png" alt="메인이미지1">
+        </li>
+        <li>
+          <img src="./images/main2.png" alt="메인이미지2">
+        </li>
+        <li>
+          <img src="./images/main3.png" alt="메인이미지3">
+        </li>
+        <li>
+          <img src="./images/main4.png" alt="메인이미지4">
+        </li>
+        <li>
+          <img src="./images/main5.png" alt="메인이미지5">
+        </li>
+        <li>
+          <img src="./images/main6.png" alt="메인이미지5">
+        </li>
+      </ul>
+    </div>
+  </article>
+  
+  <section class="con">
+    <h3>메인컨텐츠 영역</h3>
+    <article class="banner">
+      <h3>여성의류</h3>
+      <a href="#" title="여성의류"><img src="./images/women.png" alt="여성의류"></a>
+    </article>
+    
+    <article class="story">
+      <h3>블랙라벨&amp;여성의류추천</h3>
+      <a href="#" title="여성의류추천" class="bs"><img src="./images/center1.png" alt="여성의류추천" id="bs_img"></a>
+      <a href="#" title="데님모델"><img src="./images/center2.png" alt="데님모델" class="fran"></a>
+    </article>
+    
+    <article class="ad">
+      <h3>남성의류</h3>
+      <a href="#" title="남성의류"><img src="./images/man.png" alt="남성의류"></a>
+    </article>
+
+    <article class="notice">
+      <h2 class="title">promotion<i class="fas fa-plus"></i></h2>
+      <ul>
+        <li><a href="a.html" title="내용">2025 SPRING 온라인 단독 컬렉션다.</a></li>
+        <li><a href="a.html" title="내용">24FW 시즌세일 시작!
+          END OF SEASON SALE 30~50%OFF</a></li>
+        <li><a href="a.html" title="내용">코 끝 시린 날씨에 온기를 더해 줄 방한 아이템 WINTER WARM UP</a></li>
+        <li><a href="a.html" title="내용">일상의 모든 순간을 위한 게스 윈터 컬렉션
+          SUZY in WINTER COLLECTION</a></li>
+        <li><a href="a.html" title="내용">FW 리미티드 데님 에디션 발매
+          Limited Denim Edition</a></li>
+        <li><a href="a.html" title="내용">정제된 컬러와 실루엣의 가을 컬렉션
+          SUZY in FW 24 BLACK LABEL</a></li>
+        <li><a href="a.html" title="내용">UP TO 40%
+          CLEARANCE SALE</a></li>
+        <li><a href="a.html" title="내용">우리의 다음 40년을 위한 데님
+          It's here. It's GUESS JEANS.</a></li>
+      </ul>
+    </article>
+
+    <article class="store">
+      <h3>store</h3>
+      <a href="#" title="스토어"><img src="./images/bottom1.png" alt="스토어"></a>
+    </article>
+
+    <article class="news">
+      <h2 class="title">best<i class="fas fa-plus"></i></h2>
+      <ul>
+        <li><a href="a.html" title="내용">여성 브이넥 골지 스웨터 풀오버_WHITE</a></li>
+        <li><a href="a.html" title="내용">여성 M톤 뉴와이드_MEDIUM BLUE
+        </a></li>
+        <li><a href="a.html" title="내용">[Featherlight] 남녀공용 NEW 베이직 푸퍼_BLACK</a></li>
+        <li><a href="a.html" title="내용">남녀공용 컬러삼각 세미오버핏 반팔티_WHITE</a></li>
+        <li><a href="a.html" title="내용">게스의 헤리티지를 담음 컬렉션
+          GUESS ORIGINALS 24 SPRING SUMMER</a></li>
+        <li><a href="a.html" title="내용">24SS 게스 블랙 라벨 with 수지
+          SUZY in SS24 BLACK LABEL</a></li>
+        <li><a href="a.html" title="내용">2024 게스 데님 한 눈에 보기
+          DENIM SHOWCASE</a></li>
+        <li><a href="a.html" title="내용">2024 데님 스타일링 가이드
+          WOMEN’s FIT GUIDE</a></li>
+      </ul>
+
+    </article>
+  </section>
+
+  </main>
+  <!-- 푸터영역 시작 -->
+  <footer>
+    <nav class="f_lnb">
+      <ul>
+        <li><a href="a.html" title="회사소개">회사소개 / 오시는길</a></li>
+        <li><a href="a.html" title="가맹안내">가맹안내</a></li>
+        <li><a href="tel:080-0000-0000" title="가맹문의">가맹문의 : 080-0000-0000</a></li>
+        <li><a href="tel:080-0000-0000" title="일반문의">일반문의 : 080-0000-0000</a></li>
+        <li><a href="tel:080-0000-0000" title="홍보">홍보, 마케팅문의 : 080-0000-0000</a></li>
+      </ul>
+    </nav>
+
+    <nav class="sns">
+      <ul>
+        <li><a href="s.html" title="카카오스토리"><img src="./images/foot_sns01.png" alt="카카오스토리 이미지"></a></li>
+        <li><a href="f.html" title="페이스북"><img src="./images/foot_sns02.png" alt="페이스북 이미지"></a></li>
+        <li><a href="t.html" title="트위터"><img src="./images/foot_sns03.png" alt="트위터 이미지"></a></li>
+        <li><a href="i.html" title="인스타그램"><img src="./images/foot_sns04.png" alt="인스타그램 이미지"></a></li>
+        <li><a href="b.html" title="블로그"><img src="./images/foot_sns05.png" alt="블로그이미지"></a></li>
+      </ul>
+    </nav>
+
+    <address>
+      <p>(주)치어스 &amp; 경기도 분당구 성남대로 000번길 0-00 모선빌딩 0층</p>
+      <p>법인등록번호 0000-0000 Copyright&copy;2021 ssunikorea all right reserved.</p>
+    </address>
+  </footer>
+
+  <script src="./script/event.js"></script>
+  <script>
+    const brand_img = document.getElementById('bs_img');
+    
+    // brand story에 마우스 오버시 이미지 변경
+    // brand_img.addEventListener('mouseover', function(){
+    //   // window.alert('클릭');
+    //   this.scr='./images/mbn0202ov.png';
+    // });
+
+    // // 마우스 아웃하면 이미지가 다시 원래대로 변경
+    // brand_img.addEventListener('mouseout', function(){
+    //   this.src='./images/mbn0202.png';
+    // });
+
+    // html문서가 로딩이 끝나면 슬라이드를 동작하게한다.
+$(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: "slide"
+  });
+});
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,202 @@
+@charset "utf-8";
+
+body{
+  font-family: "Nanum Gothic", serif , arial;
+  font-weight: 400;
+  font-style: normal;
+  color: #333;
+  font-size: 0.75em; /* 12px */
+}
+/* 글자크기 16px = 1em = 1rem = 100% */
+
+a{color: #333;
+  text-decoration: none;
+}
+
+/* 전체메뉴버튼, 검색버튼아이콘에 마우스 오버시 손가락 모양 */
+label[for=toggle], i.fa-search{
+  cursor: pointer;
+}
+
+/* 전체메뉴 토글버튼 숨기기 */
+#toggle{display: none;}
+/* 서브메뉴를 표시하기 위한 화살표 */
+.gnb .fa-angle-down{display: none;}
+
+  /* header */
+header{
+  width: 100%;   height: 112px;
+  position: relative;
+  z-index: 1000;
+}
+
+.header_inner{
+  width: 1200px; height: 72px;
+  margin: 0 auto;
+  position: relative;
+}
+
+h1{
+/* position: absolute;
+top: 30px; left: 0px; */
+transform: translateY(20px);
+width: 196px;
+}
+
+.lnb{
+  position: absolute;
+  right: 10px; top: 14px;
+}
+.lnb > ul{
+  display: flex;
+}
+.lnb a{
+  text-transform: uppercase;
+  font-size: 13px;
+  border-right: 1px solid #858585;
+  padding: 0px 8px;
+  line-height: 22px;
+}
+.lnb li:nth-child(6) > a{
+  border: none;
+}
+
+/* 검색박스 서식 */
+#sh{
+  border: none;
+  border-bottom: 1px solid #858585;
+  height: 24px;
+  text-align: center;
+}
+
+label i.fa-search{
+  font-size: 18px;
+  transform: translate(-22px, 2px);
+}
+
+/* pc버전에서 모바일 닫기, 검색버튼 숨기기 */
+label[for=toggle], i.m_search{
+  display: none;
+}
+
+/* gnb서식 - 2단 내비게이션 */
+.gnb{
+  width: 100%; height: 40px;
+  background: rgba(255, 255, 255, .9);
+  overflow: hidden;
+  transition: 0.5s;
+}
+.gnb:hover{height: 240px;}
+
+.gnb > ul{
+  margin: 0 auto;
+  width: 1200px;
+  display: flex;
+  justify-content: right;
+}
+
+.gnb > ul > li{
+  margin: 0 3.4%;
+  text-align: center;
+  position: relative ; /* .sub의 기준이 된다.*/
+}
+.gnb > ul > li > a{
+  font-size: 16px;
+  padding: 0px 6px; /* 반응영역 넓힘*/
+  display: block; /* 크기 값*/
+  line-height: 40px; /*.gnb와 줄높이를 맞추기 위함*/
+}
+.gnb > ul > li > a:hover{
+  color: #f90;
+}
+.gnb > ul > li > a::after{
+  display: block;
+  content: "";
+  height: 2px;
+  background: #f90;
+  transform: translateY(-3px) scale(0);
+  transition: 0.3s;
+}
+.gnb > ul > li > a:hover::after{
+  transform: translateY(-3px) scale(1);
+}
+
+/* 서브메뉴 서식 */
+.sub a{
+  line-height: 30px;
+  display: block;
+  font-size: 13px;
+}
+.sub a:hover{
+  color: #f90;
+  text-decoration: underline;
+}
+/* NEWS, NOTICE 기사 목록 */
+.notice h2, .news h2{
+font-family: 'Times New Roman', Times, serif;
+font-size: 1.5rem;
+font-weight: bold;
+text-transform: uppercase;
+border-bottom: 1px solid #333;
+line-height: 40px;
+padding: 10px 1.2% 0 1.2%;
+margin-bottom: 10px;
+}
+.notice .fa-plus, .news .fa-plus{
+  float: right;
+  padding: 3px 5px;
+  border: 1px solid #333;
+  font-size: 0.8rem;
+  transform: translateY(7px);
+  cursor: pointer;
+}
+.notice ul, .news ul{}
+.notice li, .news li{
+  line-height: 30px;
+  text-indent: 10px;
+  overflow: hidden; /* 영역을 벗어나면 숨기기*/
+  text-overflow: ellipsis; /* 생략기호 나오게 하기*/
+  white-space: nowrap; /* 다음 줄로 넘기지 않기*/
+}
+
+.notice a:hover, .news a:hover{
+  text-decoration: underline;
+}
+
+main{box-sizing: border-box;
+overflow: hidden;}
+
+/* footer */
+footer{
+  width: 100%;
+  background: rgb(236, 236, 236);
+  border-top: 1px solid #d4d4d4;
+  padding: 10px 0px;
+  overflow: hidden;
+}
+
+.f_lnb, address , .sns{
+  width: 1200px;
+  margin: 0 auto;
+}
+.f_lnb > ul{
+  display: flex;
+  justify-content: left;
+}
+
+.f_lnb > ul > li{
+  margin: 0px 10px;
+}
+
+.f_lnb > ul > li > a{
+  line-height: 160%;
+  }
+
+.sns > ul{
+  display: flex;
+  justify-content: right;
+}
+
+address > p{
+  line-height: 20px;
+}
